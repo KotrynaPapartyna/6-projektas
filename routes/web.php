@@ -30,7 +30,7 @@ Route::get('','Controllers\AuthorController@index')->name('author.index');
 
 Route::prefix('books')->group(function () {
 
-    Route::get('','BooksController@index')->name('book.index');
+    Route::get('','Controllers\'BooksController@index')->name('book.index');
     Route::get('create','Controllers\BooksController@create')->name('book.create');
     Route::post('store','Controllers\BooksController@store')->name('book.store');
     Route::get('edit/{book}', 'Controllers\BooksController@edit')->name('book.edit');
